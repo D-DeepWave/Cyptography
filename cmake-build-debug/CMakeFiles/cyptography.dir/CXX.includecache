@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Administrator/Desktop/cyptography/Base/AffineCipher.h
+bits/stdc++.h
+-
+
+C:/Users/Administrator/Desktop/cyptography/Base/BASE.h
+bits/stdc++.h
+-
+
+C:/Users/Administrator/Desktop/cyptography/Base/MD5.h
+bits/stdc++.h
+-
+
+C:/Users/Administrator/Desktop/cyptography/Base/main.cpp
+BASE.h
+C:/Users/Administrator/Desktop/cyptography/Base/BASE.h
+MD5.h
+C:/Users/Administrator/Desktop/cyptography/Base/MD5.h
+AffineCipher.h
+C:/Users/Administrator/Desktop/cyptography/Base/AffineCipher.h
+
