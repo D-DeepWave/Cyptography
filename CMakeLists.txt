@@ -4,4 +4,4 @@ project(cyptography)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(cyptography
-        Base/main.cpp Base/BASE.h Base/BASE.cpp Base/MD5.cpp Base/MD5.h Base/AffineCipher.cpp Base/AffineCipher.h)
+        Base/main.cpp Base/Header/BASE.h Base/Realize/BASE.cpp Base/Realize/MD5.cpp Base/Header/MD5.h Base/Realize/AffineCipher.cpp Base/Header/AffineCipher.h Base/Header/Big.h Base/Realize/Big.cpp)

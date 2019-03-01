@@ -80,22 +80,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Administrator/Desktop/cyptography/Base/AffineCipher.cpp">
+		<Unit filename="C:/Users/Administrator/Desktop/cyptography/Base/Header/AffineCipher.h">
 			<Option target="cyptography"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/cyptography/Base/AffineCipher.h">
+		<Unit filename="C:/Users/Administrator/Desktop/cyptography/Base/Header/BASE.h">
 			<Option target="cyptography"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/cyptography/Base/BASE.cpp">
+		<Unit filename="C:/Users/Administrator/Desktop/cyptography/Base/Header/Big.h">
 			<Option target="cyptography"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/cyptography/Base/BASE.h">
+		<Unit filename="C:/Users/Administrator/Desktop/cyptography/Base/Header/MD5.h">
 			<Option target="cyptography"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/cyptography/Base/MD5.cpp">
+		<Unit filename="C:/Users/Administrator/Desktop/cyptography/Base/Realize/AffineCipher.cpp">
 			<Option target="cyptography"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/cyptography/Base/MD5.h">
+		<Unit filename="C:/Users/Administrator/Desktop/cyptography/Base/Realize/BASE.cpp">
+			<Option target="cyptography"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/cyptography/Base/Realize/Big.cpp">
+			<Option target="cyptography"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/cyptography/Base/Realize/MD5.cpp">
 			<Option target="cyptography"/>
 		</Unit>
 		<Unit filename="C:/Users/Administrator/Desktop/cyptography/Base/main.cpp">

@@ -122,86 +122,113 @@ cyptography/fast:
 	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/build
 .PHONY : cyptography/fast
 
-Base/AffineCipher.obj: Base/AffineCipher.cpp.obj
+Base/Realize/AffineCipher.obj: Base/Realize/AffineCipher.cpp.obj
 
-.PHONY : Base/AffineCipher.obj
-
-# target to build an object file
-Base/AffineCipher.cpp.obj:
-	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/AffineCipher.cpp.obj
-.PHONY : Base/AffineCipher.cpp.obj
-
-Base/AffineCipher.i: Base/AffineCipher.cpp.i
-
-.PHONY : Base/AffineCipher.i
-
-# target to preprocess a source file
-Base/AffineCipher.cpp.i:
-	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/AffineCipher.cpp.i
-.PHONY : Base/AffineCipher.cpp.i
-
-Base/AffineCipher.s: Base/AffineCipher.cpp.s
-
-.PHONY : Base/AffineCipher.s
-
-# target to generate assembly for a file
-Base/AffineCipher.cpp.s:
-	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/AffineCipher.cpp.s
-.PHONY : Base/AffineCipher.cpp.s
-
-Base/BASE.obj: Base/BASE.cpp.obj
-
-.PHONY : Base/BASE.obj
+.PHONY : Base/Realize/AffineCipher.obj
 
 # target to build an object file
-Base/BASE.cpp.obj:
-	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/BASE.cpp.obj
-.PHONY : Base/BASE.cpp.obj
+Base/Realize/AffineCipher.cpp.obj:
+	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/Realize/AffineCipher.cpp.obj
+.PHONY : Base/Realize/AffineCipher.cpp.obj
 
-Base/BASE.i: Base/BASE.cpp.i
+Base/Realize/AffineCipher.i: Base/Realize/AffineCipher.cpp.i
 
-.PHONY : Base/BASE.i
+.PHONY : Base/Realize/AffineCipher.i
 
 # target to preprocess a source file
-Base/BASE.cpp.i:
-	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/BASE.cpp.i
-.PHONY : Base/BASE.cpp.i
+Base/Realize/AffineCipher.cpp.i:
+	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/Realize/AffineCipher.cpp.i
+.PHONY : Base/Realize/AffineCipher.cpp.i
 
-Base/BASE.s: Base/BASE.cpp.s
+Base/Realize/AffineCipher.s: Base/Realize/AffineCipher.cpp.s
 
-.PHONY : Base/BASE.s
+.PHONY : Base/Realize/AffineCipher.s
 
 # target to generate assembly for a file
-Base/BASE.cpp.s:
-	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/BASE.cpp.s
-.PHONY : Base/BASE.cpp.s
+Base/Realize/AffineCipher.cpp.s:
+	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/Realize/AffineCipher.cpp.s
+.PHONY : Base/Realize/AffineCipher.cpp.s
 
-Base/MD5.obj: Base/MD5.cpp.obj
+Base/Realize/BASE.obj: Base/Realize/BASE.cpp.obj
 
-.PHONY : Base/MD5.obj
+.PHONY : Base/Realize/BASE.obj
 
 # target to build an object file
-Base/MD5.cpp.obj:
-	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/MD5.cpp.obj
-.PHONY : Base/MD5.cpp.obj
+Base/Realize/BASE.cpp.obj:
+	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/Realize/BASE.cpp.obj
+.PHONY : Base/Realize/BASE.cpp.obj
 
-Base/MD5.i: Base/MD5.cpp.i
+Base/Realize/BASE.i: Base/Realize/BASE.cpp.i
 
-.PHONY : Base/MD5.i
+.PHONY : Base/Realize/BASE.i
 
 # target to preprocess a source file
-Base/MD5.cpp.i:
-	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/MD5.cpp.i
-.PHONY : Base/MD5.cpp.i
+Base/Realize/BASE.cpp.i:
+	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/Realize/BASE.cpp.i
+.PHONY : Base/Realize/BASE.cpp.i
 
-Base/MD5.s: Base/MD5.cpp.s
+Base/Realize/BASE.s: Base/Realize/BASE.cpp.s
 
-.PHONY : Base/MD5.s
+.PHONY : Base/Realize/BASE.s
 
 # target to generate assembly for a file
-Base/MD5.cpp.s:
-	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/MD5.cpp.s
-.PHONY : Base/MD5.cpp.s
+Base/Realize/BASE.cpp.s:
+	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/Realize/BASE.cpp.s
+.PHONY : Base/Realize/BASE.cpp.s
+
+Base/Realize/Big.obj: Base/Realize/Big.cpp.obj
+
+.PHONY : Base/Realize/Big.obj
+
+# target to build an object file
+Base/Realize/Big.cpp.obj:
+	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/Realize/Big.cpp.obj
+.PHONY : Base/Realize/Big.cpp.obj
+
+Base/Realize/Big.i: Base/Realize/Big.cpp.i
+
+.PHONY : Base/Realize/Big.i
+
+# target to preprocess a source file
+Base/Realize/Big.cpp.i:
+	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/Realize/Big.cpp.i
+.PHONY : Base/Realize/Big.cpp.i
+
+Base/Realize/Big.s: Base/Realize/Big.cpp.s
+
+.PHONY : Base/Realize/Big.s
+
+# target to generate assembly for a file
+Base/Realize/Big.cpp.s:
+	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/Realize/Big.cpp.s
+.PHONY : Base/Realize/Big.cpp.s
+
+Base/Realize/MD5.obj: Base/Realize/MD5.cpp.obj
+
+.PHONY : Base/Realize/MD5.obj
+
+# target to build an object file
+Base/Realize/MD5.cpp.obj:
+	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/Realize/MD5.cpp.obj
+.PHONY : Base/Realize/MD5.cpp.obj
+
+Base/Realize/MD5.i: Base/Realize/MD5.cpp.i
+
+.PHONY : Base/Realize/MD5.i
+
+# target to preprocess a source file
+Base/Realize/MD5.cpp.i:
+	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/Realize/MD5.cpp.i
+.PHONY : Base/Realize/MD5.cpp.i
+
+Base/Realize/MD5.s: Base/Realize/MD5.cpp.s
+
+.PHONY : Base/Realize/MD5.s
+
+# target to generate assembly for a file
+Base/Realize/MD5.cpp.s:
+	$(MAKE) -f CMakeFiles\cyptography.dir\build.make CMakeFiles/cyptography.dir/Base/Realize/MD5.cpp.s
+.PHONY : Base/Realize/MD5.cpp.s
 
 Base/main.obj: Base/main.cpp.obj
 
@@ -239,15 +266,18 @@ help:
 	@echo ... rebuild_cache
 	@echo ... cyptography
 	@echo ... edit_cache
-	@echo ... Base/AffineCipher.obj
-	@echo ... Base/AffineCipher.i
-	@echo ... Base/AffineCipher.s
-	@echo ... Base/BASE.obj
-	@echo ... Base/BASE.i
-	@echo ... Base/BASE.s
-	@echo ... Base/MD5.obj
-	@echo ... Base/MD5.i
-	@echo ... Base/MD5.s
+	@echo ... Base/Realize/AffineCipher.obj
+	@echo ... Base/Realize/AffineCipher.i
+	@echo ... Base/Realize/AffineCipher.s
+	@echo ... Base/Realize/BASE.obj
+	@echo ... Base/Realize/BASE.i
+	@echo ... Base/Realize/BASE.s
+	@echo ... Base/Realize/Big.obj
+	@echo ... Base/Realize/Big.i
+	@echo ... Base/Realize/Big.s
+	@echo ... Base/Realize/MD5.obj
+	@echo ... Base/Realize/MD5.i
+	@echo ... Base/Realize/MD5.s
 	@echo ... Base/main.obj
 	@echo ... Base/main.i
 	@echo ... Base/main.s

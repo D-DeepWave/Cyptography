@@ -69,64 +69,79 @@ CMakeFiles/cyptography.dir/Base/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cyptography.dir/Base/main.cpp.s"
 	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\cyptography\Base\main.cpp -o CMakeFiles\cyptography.dir\Base\main.cpp.s
 
-CMakeFiles/cyptography.dir/Base/BASE.cpp.obj: CMakeFiles/cyptography.dir/flags.make
-CMakeFiles/cyptography.dir/Base/BASE.cpp.obj: ../Base/BASE.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\cyptography\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cyptography.dir/Base/BASE.cpp.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cyptography.dir\Base\BASE.cpp.obj -c C:\Users\Administrator\Desktop\cyptography\Base\BASE.cpp
+CMakeFiles/cyptography.dir/Base/Realize/BASE.cpp.obj: CMakeFiles/cyptography.dir/flags.make
+CMakeFiles/cyptography.dir/Base/Realize/BASE.cpp.obj: ../Base/Realize/BASE.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\cyptography\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cyptography.dir/Base/Realize/BASE.cpp.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cyptography.dir\Base\Realize\BASE.cpp.obj -c C:\Users\Administrator\Desktop\cyptography\Base\Realize\BASE.cpp
 
-CMakeFiles/cyptography.dir/Base/BASE.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cyptography.dir/Base/BASE.cpp.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Administrator\Desktop\cyptography\Base\BASE.cpp > CMakeFiles\cyptography.dir\Base\BASE.cpp.i
+CMakeFiles/cyptography.dir/Base/Realize/BASE.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cyptography.dir/Base/Realize/BASE.cpp.i"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Administrator\Desktop\cyptography\Base\Realize\BASE.cpp > CMakeFiles\cyptography.dir\Base\Realize\BASE.cpp.i
 
-CMakeFiles/cyptography.dir/Base/BASE.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cyptography.dir/Base/BASE.cpp.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\cyptography\Base\BASE.cpp -o CMakeFiles\cyptography.dir\Base\BASE.cpp.s
+CMakeFiles/cyptography.dir/Base/Realize/BASE.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cyptography.dir/Base/Realize/BASE.cpp.s"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\cyptography\Base\Realize\BASE.cpp -o CMakeFiles\cyptography.dir\Base\Realize\BASE.cpp.s
 
-CMakeFiles/cyptography.dir/Base/MD5.cpp.obj: CMakeFiles/cyptography.dir/flags.make
-CMakeFiles/cyptography.dir/Base/MD5.cpp.obj: ../Base/MD5.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\cyptography\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cyptography.dir/Base/MD5.cpp.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cyptography.dir\Base\MD5.cpp.obj -c C:\Users\Administrator\Desktop\cyptography\Base\MD5.cpp
+CMakeFiles/cyptography.dir/Base/Realize/MD5.cpp.obj: CMakeFiles/cyptography.dir/flags.make
+CMakeFiles/cyptography.dir/Base/Realize/MD5.cpp.obj: ../Base/Realize/MD5.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\cyptography\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cyptography.dir/Base/Realize/MD5.cpp.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cyptography.dir\Base\Realize\MD5.cpp.obj -c C:\Users\Administrator\Desktop\cyptography\Base\Realize\MD5.cpp
 
-CMakeFiles/cyptography.dir/Base/MD5.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cyptography.dir/Base/MD5.cpp.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Administrator\Desktop\cyptography\Base\MD5.cpp > CMakeFiles\cyptography.dir\Base\MD5.cpp.i
+CMakeFiles/cyptography.dir/Base/Realize/MD5.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cyptography.dir/Base/Realize/MD5.cpp.i"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Administrator\Desktop\cyptography\Base\Realize\MD5.cpp > CMakeFiles\cyptography.dir\Base\Realize\MD5.cpp.i
 
-CMakeFiles/cyptography.dir/Base/MD5.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cyptography.dir/Base/MD5.cpp.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\cyptography\Base\MD5.cpp -o CMakeFiles\cyptography.dir\Base\MD5.cpp.s
+CMakeFiles/cyptography.dir/Base/Realize/MD5.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cyptography.dir/Base/Realize/MD5.cpp.s"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\cyptography\Base\Realize\MD5.cpp -o CMakeFiles\cyptography.dir\Base\Realize\MD5.cpp.s
 
-CMakeFiles/cyptography.dir/Base/AffineCipher.cpp.obj: CMakeFiles/cyptography.dir/flags.make
-CMakeFiles/cyptography.dir/Base/AffineCipher.cpp.obj: ../Base/AffineCipher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\cyptography\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cyptography.dir/Base/AffineCipher.cpp.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cyptography.dir\Base\AffineCipher.cpp.obj -c C:\Users\Administrator\Desktop\cyptography\Base\AffineCipher.cpp
+CMakeFiles/cyptography.dir/Base/Realize/AffineCipher.cpp.obj: CMakeFiles/cyptography.dir/flags.make
+CMakeFiles/cyptography.dir/Base/Realize/AffineCipher.cpp.obj: ../Base/Realize/AffineCipher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\cyptography\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cyptography.dir/Base/Realize/AffineCipher.cpp.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cyptography.dir\Base\Realize\AffineCipher.cpp.obj -c C:\Users\Administrator\Desktop\cyptography\Base\Realize\AffineCipher.cpp
 
-CMakeFiles/cyptography.dir/Base/AffineCipher.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cyptography.dir/Base/AffineCipher.cpp.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Administrator\Desktop\cyptography\Base\AffineCipher.cpp > CMakeFiles\cyptography.dir\Base\AffineCipher.cpp.i
+CMakeFiles/cyptography.dir/Base/Realize/AffineCipher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cyptography.dir/Base/Realize/AffineCipher.cpp.i"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Administrator\Desktop\cyptography\Base\Realize\AffineCipher.cpp > CMakeFiles\cyptography.dir\Base\Realize\AffineCipher.cpp.i
 
-CMakeFiles/cyptography.dir/Base/AffineCipher.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cyptography.dir/Base/AffineCipher.cpp.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\cyptography\Base\AffineCipher.cpp -o CMakeFiles\cyptography.dir\Base\AffineCipher.cpp.s
+CMakeFiles/cyptography.dir/Base/Realize/AffineCipher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cyptography.dir/Base/Realize/AffineCipher.cpp.s"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\cyptography\Base\Realize\AffineCipher.cpp -o CMakeFiles\cyptography.dir\Base\Realize\AffineCipher.cpp.s
+
+CMakeFiles/cyptography.dir/Base/Realize/Big.cpp.obj: CMakeFiles/cyptography.dir/flags.make
+CMakeFiles/cyptography.dir/Base/Realize/Big.cpp.obj: ../Base/Realize/Big.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\cyptography\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cyptography.dir/Base/Realize/Big.cpp.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cyptography.dir\Base\Realize\Big.cpp.obj -c C:\Users\Administrator\Desktop\cyptography\Base\Realize\Big.cpp
+
+CMakeFiles/cyptography.dir/Base/Realize/Big.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cyptography.dir/Base/Realize/Big.cpp.i"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Administrator\Desktop\cyptography\Base\Realize\Big.cpp > CMakeFiles\cyptography.dir\Base\Realize\Big.cpp.i
+
+CMakeFiles/cyptography.dir/Base/Realize/Big.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cyptography.dir/Base/Realize/Big.cpp.s"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\cyptography\Base\Realize\Big.cpp -o CMakeFiles\cyptography.dir\Base\Realize\Big.cpp.s
 
 # Object files for target cyptography
 cyptography_OBJECTS = \
 "CMakeFiles/cyptography.dir/Base/main.cpp.obj" \
-"CMakeFiles/cyptography.dir/Base/BASE.cpp.obj" \
-"CMakeFiles/cyptography.dir/Base/MD5.cpp.obj" \
-"CMakeFiles/cyptography.dir/Base/AffineCipher.cpp.obj"
+"CMakeFiles/cyptography.dir/Base/Realize/BASE.cpp.obj" \
+"CMakeFiles/cyptography.dir/Base/Realize/MD5.cpp.obj" \
+"CMakeFiles/cyptography.dir/Base/Realize/AffineCipher.cpp.obj" \
+"CMakeFiles/cyptography.dir/Base/Realize/Big.cpp.obj"
 
 # External object files for target cyptography
 cyptography_EXTERNAL_OBJECTS =
 
 cyptography.exe: CMakeFiles/cyptography.dir/Base/main.cpp.obj
-cyptography.exe: CMakeFiles/cyptography.dir/Base/BASE.cpp.obj
-cyptography.exe: CMakeFiles/cyptography.dir/Base/MD5.cpp.obj
-cyptography.exe: CMakeFiles/cyptography.dir/Base/AffineCipher.cpp.obj
+cyptography.exe: CMakeFiles/cyptography.dir/Base/Realize/BASE.cpp.obj
+cyptography.exe: CMakeFiles/cyptography.dir/Base/Realize/MD5.cpp.obj
+cyptography.exe: CMakeFiles/cyptography.dir/Base/Realize/AffineCipher.cpp.obj
+cyptography.exe: CMakeFiles/cyptography.dir/Base/Realize/Big.cpp.obj
 cyptography.exe: CMakeFiles/cyptography.dir/build.make
 cyptography.exe: CMakeFiles/cyptography.dir/linklibs.rsp
 cyptography.exe: CMakeFiles/cyptography.dir/objects1.rsp
 cyptography.exe: CMakeFiles/cyptography.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Administrator\Desktop\cyptography\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable cyptography.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Administrator\Desktop\cyptography\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable cyptography.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cyptography.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
