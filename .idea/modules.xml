@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/cyptography.iml" filepath="$PROJECT_DIR$/.idea/cyptography.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Cyptography.iml" filepath="$PROJECT_DIR$/.idea/Cyptography.iml" />
     </modules>
   </component>
 </project>

@@ -1,9 +1,9 @@
 #include "Header/BASE.h"
 #include "Header/MD5.h"
 #include "Header/AffineCipher.h"
+#include "Header/Big.h"
 
-
-//int main() {
+int main() {
 //   string a,b;
 //   for(int i = 1;i<=1020;i++) a+=1,b+=2;
 //    string x0, y0;
@@ -58,5 +58,7 @@
 
 
 //
-//}
+
+
+}
 
