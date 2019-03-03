@@ -12,7 +12,7 @@
 #define KB 0xefcdab89
 #define KC 0x98badcfe
 #define KD 0x10325476
-#define B 4294967296
+#define B_MD5 4294967296
 #define F(X, Y, Z) (((X) & (Y)) | ((~X) & (Z)))
 #define G(X, Y, Z) (((X) & (Z)) | ((Y) & (~Z)))
 #define H(X, Y, Z) ((X) ^ (Y) ^ (Z))

@@ -11,6 +11,7 @@
 #include <cstring>
 #include <cstdlib>
 #include <algorithm>
+#include <random>
 
 #define capacity 100
 #define base 0x40000000
@@ -23,15 +24,13 @@
 #define signedZero signed_BigInt(0)
 #define signedOne  signed_BigInt(1)
 
-const int Prime[25] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
-int Big_Prime_Bits, Trial;
 using namespace std;
 
-ofstream file_out;
-ofstream public_out;
-ofstream private_out;
-
-inline int sgn(int key);
+inline int sgn(int key) {
+    if (key > 0) return 1;
+    if (key < 0) return -1;
+    if (key == 0) return 0;
+}
 
 class unsigned_BigInt {
 public:
@@ -43,6 +42,8 @@ public:
     unsigned_BigInt(const unsigned_BigInt &source);
 
     unsigned_BigInt(int key);
+
+    unsigned_BigInt(string key);
 
     unsigned_BigInt &operator=(const unsigned_BigInt &key);
 
@@ -109,8 +110,6 @@ inline void shift_left(unsigned_BigInt &A);
 
 inline void divide(const unsigned_BigInt &A, const unsigned_BigInt &B, unsigned_BigInt &Q, unsigned_BigInt &R);
 
-unsigned_BigInt Minus_One;
-
 unsigned_BigInt operator+(const unsigned_BigInt &A, const unsigned_BigInt &B);
 
 unsigned_BigInt operator-(const unsigned_BigInt &A, const unsigned_BigInt &B);
@@ -131,6 +130,10 @@ unsigned_BigInt Bin_To_Int(const BigInt_Exponentiation &W);
 
 unsigned_BigInt Modular_Exponentiation(unsigned_BigInt A, const BigInt_Exponentiation &W);
 
+unsigned_BigInt Modular_Exponentiation(unsigned_BigInt A, unsigned_BigInt B, const unsigned_BigInt &N);
+
+istream & operator >> (istream &In, unsigned_BigInt &A);
+
 ostream &operator<<(ostream &Out, const unsigned_BigInt &A);
 
 ostream &operator<<(ostream &Out, const signed_BigInt &V);
@@ -149,6 +152,8 @@ signed_BigInt operator/(const signed_BigInt &A, const signed_BigInt &B);
 
 signed_BigInt operator%(const signed_BigInt &A, const signed_BigInt &B);
 
+signed_BigInt Get_Prime(const int Prime_Bits, const int Trial);
+
 signed_BigInt Euclid_GCD(const signed_BigInt &A, const signed_BigInt &B);
 
 signed_BigInt Extended_Euclid_GCD(const signed_BigInt &A, const signed_BigInt &B, signed_BigInt &X, signed_BigInt &Y);
@@ -158,5 +163,19 @@ output_BigInt operator+(const output_BigInt &A, const output_BigInt &B);
 output_BigInt operator*(const output_BigInt &A, const int B);
 
 BigInt_Exponentiation Get_Random_Binary(const int full, const int empty);
+
+bool Miller_Rabin_Witness(const unsigned_BigInt &A, const BigInt_Exponentiation &W);
+
+bool Miller_Rabin_Primality_Test(const BigInt_Exponentiation &W, const int Trial);
+
+void GenerateKey(int bits, int round);
+
+unsigned_BigInt Encode(const string &X);
+
+string Decode(unsigned_BigInt A);
+
+unsigned_BigInt E_RSA(string s, unsigned_BigInt e, unsigned_BigInt n);
+
+string D_RSA(unsigned_BigInt s, unsigned_BigInt e, unsigned_BigInt n);
 
 #endif //CYPTOGRAPHY_BIG_H

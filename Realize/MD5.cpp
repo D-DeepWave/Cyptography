@@ -62,7 +62,7 @@ void MD5::TurnOperation(unsigned char *src) {
     unsigned int *temp = reinterpret_cast<unsigned int *>(src);
     unsigned int a = ua, b = ub, c = uc, d = ud;
     for (int i = 0; i < 64; i++) {
-        unsigned int y = B * abs(sin(i + 1));
+        unsigned int y = B_MD5 * abs(sin(i + 1));
         unsigned int x ,t;
         int j;
         switch (i / 16) {

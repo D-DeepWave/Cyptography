@@ -58,7 +58,17 @@ int main() {
 
 
 //
-
-
+srand(time(0));
+//    GenerateKey(256,3);
+    string s;
+    unsigned_BigInt e(7),n,c,d;
+    cin>>c;
+   cin>>d;
+    cin>>n;
+    cout<<endl;
+    cout<<D_RSA(c,d,n);
+//    cout<<Encode(s);
+//unsigned_BigInt a(473105459);
+//cout<<Decode(a)<<endl;
 }
 

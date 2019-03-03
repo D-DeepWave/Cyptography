@@ -14,6 +14,22 @@ E:/Document/Course Design/Cyptography/Header/BASE.h
 bits/stdc++.h
 -
 
+E:/Document/Course Design/Cyptography/Header/Big.h
+iostream
+-
+fstream
+-
+cstdio
+-
+cstring
+-
+cstdlib
+-
+algorithm
+-
+random
+-
+
 E:/Document/Course Design/Cyptography/Header/MD5.h
 bits/stdc++.h
 -
@@ -25,4 +41,6 @@ Header/MD5.h
 E:/Document/Course Design/Cyptography/Header/MD5.h
 Header/AffineCipher.h
 E:/Document/Course Design/Cyptography/Header/AffineCipher.h
+Header/Big.h
+E:/Document/Course Design/Cyptography/Header/Big.h
 
