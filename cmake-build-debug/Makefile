@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "E:\Document\Course Design\Cyptography"
+CMAKE_SOURCE_DIR = C:\Users\Administrator\Desktop\Cyptography
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "E:\Document\Course Design\Cyptography\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\Administrator\Desktop\Cyptography\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Document\Course Design\Cyptography\cmake-build-debug\CMakeFiles" "E:\Document\Course Design\Cyptography\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Administrator\Desktop\Cyptography\cmake-build-debug\CMakeFiles C:\Users\Administrator\Desktop\Cyptography\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Document\Course Design\Cyptography\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Administrator\Desktop\Cyptography\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -203,6 +203,33 @@ Realize/Big.cpp.s:
 	$(MAKE) -f CMakeFiles\Cyptography.dir\build.make CMakeFiles/Cyptography.dir/Realize/Big.cpp.s
 .PHONY : Realize/Big.cpp.s
 
+Realize/Elgamal.obj: Realize/Elgamal.cpp.obj
+
+.PHONY : Realize/Elgamal.obj
+
+# target to build an object file
+Realize/Elgamal.cpp.obj:
+	$(MAKE) -f CMakeFiles\Cyptography.dir\build.make CMakeFiles/Cyptography.dir/Realize/Elgamal.cpp.obj
+.PHONY : Realize/Elgamal.cpp.obj
+
+Realize/Elgamal.i: Realize/Elgamal.cpp.i
+
+.PHONY : Realize/Elgamal.i
+
+# target to preprocess a source file
+Realize/Elgamal.cpp.i:
+	$(MAKE) -f CMakeFiles\Cyptography.dir\build.make CMakeFiles/Cyptography.dir/Realize/Elgamal.cpp.i
+.PHONY : Realize/Elgamal.cpp.i
+
+Realize/Elgamal.s: Realize/Elgamal.cpp.s
+
+.PHONY : Realize/Elgamal.s
+
+# target to generate assembly for a file
+Realize/Elgamal.cpp.s:
+	$(MAKE) -f CMakeFiles\Cyptography.dir\build.make CMakeFiles/Cyptography.dir/Realize/Elgamal.cpp.s
+.PHONY : Realize/Elgamal.cpp.s
+
 Realize/MD5.obj: Realize/MD5.cpp.obj
 
 .PHONY : Realize/MD5.obj
@@ -275,6 +302,9 @@ help:
 	@echo ... Realize/Big.obj
 	@echo ... Realize/Big.i
 	@echo ... Realize/Big.s
+	@echo ... Realize/Elgamal.obj
+	@echo ... Realize/Elgamal.i
+	@echo ... Realize/Elgamal.s
 	@echo ... Realize/MD5.obj
 	@echo ... Realize/MD5.i
 	@echo ... Realize/MD5.s

@@ -98,17 +98,17 @@ struct BigInt_Exponentiation {
     int operator[](int Index) const { return data[Index]; }
 };
 
-inline int compare(const unsigned_BigInt &A, const unsigned_BigInt &B);
+int compare(const unsigned_BigInt &A, const unsigned_BigInt &B);
 
-inline void shift_right_base(unsigned_BigInt &A);
+void shift_right_base(unsigned_BigInt &A);
 
-inline void shift_left_base(unsigned_BigInt &A);
+void shift_left_base(unsigned_BigInt &A);
 
-inline void shift_right(unsigned_BigInt &A);
+void shift_right(unsigned_BigInt &A);
 
-inline void shift_left(unsigned_BigInt &A);
+void shift_left(unsigned_BigInt &A);
 
-inline void divide(const unsigned_BigInt &A, const unsigned_BigInt &B, unsigned_BigInt &Q, unsigned_BigInt &R);
+void divide(const unsigned_BigInt &A, const unsigned_BigInt &B, unsigned_BigInt &Q, unsigned_BigInt &R);
 
 unsigned_BigInt operator+(const unsigned_BigInt &A, const unsigned_BigInt &B);
 
@@ -132,11 +132,13 @@ unsigned_BigInt Modular_Exponentiation(unsigned_BigInt A, const BigInt_Exponenti
 
 unsigned_BigInt Modular_Exponentiation(unsigned_BigInt A, unsigned_BigInt B, const unsigned_BigInt &N);
 
-istream & operator >> (istream &In, unsigned_BigInt &A);
+istream &operator>>(istream &In, unsigned_BigInt &A);
 
 ostream &operator<<(ostream &Out, const unsigned_BigInt &A);
 
 ostream &operator<<(ostream &Out, const signed_BigInt &V);
+
+ofstream &operator<<(ofstream &Out, const unsigned_BigInt &A);
 
 bool operator==(const signed_BigInt &A, const signed_BigInt &B);
 
@@ -174,8 +176,8 @@ unsigned_BigInt Encode(const string &X);
 
 string Decode(unsigned_BigInt A);
 
-unsigned_BigInt E_RSA(string s, unsigned_BigInt e, unsigned_BigInt n);
+unsigned_BigInt E_RSA(string s);
 
-string D_RSA(unsigned_BigInt s, unsigned_BigInt e, unsigned_BigInt n);
+string D_RSA(unsigned_BigInt c) ;
 
 #endif //CYPTOGRAPHY_BIG_H

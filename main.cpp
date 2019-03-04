@@ -2,6 +2,7 @@
 #include "Header/MD5.h"
 #include "Header/AffineCipher.h"
 #include "Header/Big.h"
+#include "Header/Elgamal.h"
 
 int main() {
 //   string a,b;
@@ -58,17 +59,45 @@ int main() {
 
 
 //
-srand(time(0));
+    srand(time(0));
 //    GenerateKey(256,3);
-    string s;
-    unsigned_BigInt e(7),n,c,d;
-    cin>>c;
-   cin>>d;
-    cin>>n;
-    cout<<endl;
-    cout<<D_RSA(c,d,n);
+//string s;
+//cin>>s;
+//    init();
+//    unsigned_BigInt c;
+//    cin >> c;
+//    cout << D_RSA(c) << endl;
+    // Get_Prime(1024, 3);
+//    BigInt_Exponentiation W;
+//    unsigned_BigInt a;
+//    cin>>a;
+//    W.N = a;
+//    cout<<Miller_Rabin_Primality_Test(W,3)<<endl;
+//    string s;
+//    unsigned_BigInt e(7),n,c,d;
+//    cin>>c;
+//   cin>>d;
+//    cin>>n;
+//    cout<<endl;
+//    cout<<D_RSA(c,d,n);
 //    cout<<Encode(s);
 //unsigned_BigInt a(473105459);
 //cout<<Decode(a)<<endl;
+//Elgamal x;
+//x.Generate();
+unsigned_BigInt s;
+//wstring s;
+cin>>s;
+//cout<<BinToBig(ToBin(s));
+wcout<<BigToWstring(s)<<endl;
+//unsigned_BigInt p,q;
+//    signed_BigInt a,b,x,temp;
+//    a.sign = b.sign=x.sign=temp.sign=1;
+//cin>>p>>q;
+//a.data =p;
+//b.data = q;
+//Extended_Euclid_GCD(a,b,x,temp);
+//cout<<x.data<<endl;
+//cout<<Modular_Exponentiation(a,b,c)<<endl;
 }
 

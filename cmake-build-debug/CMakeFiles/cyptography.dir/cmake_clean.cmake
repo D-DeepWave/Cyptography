@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Cyptography.dir/Realize/BASE.cpp.obj"
   "CMakeFiles/Cyptography.dir/Realize/Big.cpp.obj"
   "CMakeFiles/Cyptography.dir/Realize/MD5.cpp.obj"
+  "CMakeFiles/Cyptography.dir/Realize/Elgamal.cpp.obj"
   "Cyptography.pdb"
   "Cyptography.exe"
   "Cyptography.exe.manifest"

@@ -10,12 +10,17 @@ CMakeFiles/Cyptography.dir/Realize/BASE.cpp.obj: ../Realize/BASE.cpp
 CMakeFiles/Cyptography.dir/Realize/Big.cpp.obj: ../Header/Big.h
 CMakeFiles/Cyptography.dir/Realize/Big.cpp.obj: ../Realize/Big.cpp
 
+CMakeFiles/Cyptography.dir/Realize/Elgamal.cpp.obj: ../Header/Big.h
+CMakeFiles/Cyptography.dir/Realize/Elgamal.cpp.obj: ../Header/Elgamal.h
+CMakeFiles/Cyptography.dir/Realize/Elgamal.cpp.obj: ../Realize/Elgamal.cpp
+
 CMakeFiles/Cyptography.dir/Realize/MD5.cpp.obj: ../Header/MD5.h
 CMakeFiles/Cyptography.dir/Realize/MD5.cpp.obj: ../Realize/MD5.cpp
 
 CMakeFiles/Cyptography.dir/main.cpp.obj: ../Header/AffineCipher.h
 CMakeFiles/Cyptography.dir/main.cpp.obj: ../Header/BASE.h
 CMakeFiles/Cyptography.dir/main.cpp.obj: ../Header/Big.h
+CMakeFiles/Cyptography.dir/main.cpp.obj: ../Header/Elgamal.h
 CMakeFiles/Cyptography.dir/main.cpp.obj: ../Header/MD5.h
 CMakeFiles/Cyptography.dir/main.cpp.obj: ../main.cpp
 

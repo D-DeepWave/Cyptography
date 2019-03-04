@@ -7,6 +7,10 @@
 unsigned_BigInt Minus_One;
 int Big_Prime_Bits, Trial;
 const int Prime[25] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
+ofstream public_key_out;
+ofstream private_key_out;
+ifstream public_key_in;
+ifstream private_key_in;
 
 unsigned_BigInt::unsigned_BigInt(const unsigned_BigInt &source) : len(source.len) {
     memcpy(__data, source.__data, len * sizeof *__data);
@@ -220,6 +224,15 @@ istream &operator>>(istream &In, unsigned_BigInt &A) {
     return In;
 }
 
+ifstream &operator>>(ifstream &In, unsigned_BigInt &A) {
+    char ch;
+    for (A = 0; In >> ch;) {
+        A = A * 10 + (ch - '0');
+        if (In.peek() <= ' ') break;
+    }
+    return In;
+}
+
 inline void divide(const unsigned_BigInt &A, const unsigned_BigInt &B, unsigned_BigInt &Q, unsigned_BigInt &R) {
     static bool flag[exponentiation_size];
     static int top;
@@ -296,22 +309,38 @@ ostream &operator<<(ostream &Out, const unsigned_BigInt &A) {
         Out << 0;
         return Out;
     }
-
     output_BigInt V = 0;
     for (int i = A.len - 1; i >= 0; --i)
         V = V * base + A[i];
-
-
     Out << V[V.len - 1];
     for (int i = V.len - 2; i >= 0; --i)
         for (int j = 100000000; j > 0; j /= 10)
             Out << V[i] / j % 10;
     Out << endl;
-    int digit = 0;
-    for (int k = 1; k <= V[V.len - 1]; k *= 10)
-        ++digit;
-    digit += (V.len - 1) * 9;
-    Out << "Total Digit = " << digit << endl;
+    if(Out==cout) {
+        int digit = 0;
+        for (int k = 1; k <= V[V.len - 1]; k *= 10)
+            ++digit;
+        digit += (V.len - 1) * 9;
+        Out << "Total Digit = " << digit << endl;
+    }
+    return Out;
+}
+
+ofstream &operator<<(ofstream &Out, const unsigned_BigInt &A) {
+    if (A.len == 0) {
+        Out << (unsigned_BigInt) 0;
+        return Out;
+    }
+
+    output_BigInt V = 0;
+    for (int i = A.len - 1; i >= 0; --i)
+        V = V * base + A[i];
+    Out << (unsigned_BigInt) V[V.len - 1];
+    for (int i = V.len - 2; i >= 0; --i)
+        for (int j = 100000000; j > 0; j /= 10)
+            Out << (unsigned_BigInt) V[i] / j % 10;
+    Out << endl;
     return Out;
 }
 
@@ -555,11 +584,20 @@ signed_BigInt Get_Prime(const int Prime_Bits, const int Trial) {
     int noisy = rand() % 100 + 100;
     int counter = 0;
     BigInt_Exponentiation W;
+
+//   cin>>W.N;
+
+    // W.N = W.N-100;
     while (true) {
         ++counter;
-        W = Get_Random_Binary(bits - noisy, noisy);    // empty >= 1
-        // cout << W.N ;
-        if (Miller_Rabin_Primality_Test(W, Trial)) {
+        W = Get_Random_Binary(bits - noisy, noisy);
+        // empty >= 1
+        // cout << counter << endl;
+//        cout << W.N;
+        bool f;
+        f = Miller_Rabin_Primality_Test(W, Trial);
+//        cout<<counter<<" is "<<f<<endl;
+        if (f) {
             cout << "Total Trial = " << counter << endl;
             signed_BigInt R;
             R.sign = 1;
@@ -567,11 +605,14 @@ signed_BigInt Get_Prime(const int Prime_Bits, const int Trial) {
             //cout << "Yes it's Prime" << endl;
             return R;
         }
-        // cout << "It is not Prime!" << endl;
+        //  cout << "It is not Prime!" << endl;
+//       W.N = W.N + 2;
     }
 }
 
 void GenerateKey(int bits, int round) {
+    public_key_out.open("rsa_public.key", ios::app);
+    private_key_out.open("rsa_private.key", ios::app);
     signed_BigInt P = Get_Prime(bits, round);
     signed_BigInt Q = Get_Prime(bits, round);
     signed_BigInt N = P * Q;
@@ -585,6 +626,12 @@ void GenerateKey(int bits, int round) {
     cout << "N = :" << N;
     cout << "E = :" << E;
     cout << "D = :" << D;
+
+    private_key_out << D ;
+    private_key_out << P ;
+    private_key_out << Q ;
+    public_key_out << N ;
+    public_key_out << E ;
 }
 
 unsigned_BigInt Encode(const string &X) {
@@ -605,16 +652,24 @@ string Decode(unsigned_BigInt A) {
     return S;
 }
 
-unsigned_BigInt E_RSA(string s, unsigned_BigInt e, unsigned_BigInt n) {
-    unsigned_BigInt res, m;
+unsigned_BigInt E_RSA(string s) {
+    public_key_in.open("rsa_public.key");
+    private_key_in.open("rsa_private.key");
+    unsigned_BigInt res, m, e, n;
     m = Encode(s);
+    public_key_in >> n>>e ;
+  //  cout<<m<<n<<e;
     res = Modular_Exponentiation(m, e, n);
     return res;
 }
 
-string D_RSA(unsigned_BigInt c, unsigned_BigInt d, unsigned_BigInt n) {
-    unsigned_BigInt res;
+string D_RSA(unsigned_BigInt c) {
+    public_key_in.open("rsa_public.key");
+    private_key_in.open("rsa_private.key");
+    unsigned_BigInt res, d, n;
     string s;
+    public_key_in >> n;
+    private_key_in >> d;
     res = Modular_Exponentiation(c, d, n);
     s = Decode(res);
     return s;
