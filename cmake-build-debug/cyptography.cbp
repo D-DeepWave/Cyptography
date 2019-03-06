@@ -8,112 +8,122 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug"/>
+				<Option working_dir="C:/Users/37dw/Desktop/Cyptography/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug"/>
+				<Option working_dir="C:/Users/37dw/Desktop/Cyptography/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Cyptography">
-				<Option output="C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Cyptography.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug"/>
+				<Option output="C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Cyptography.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/37dw/Desktop/Cyptography/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include/c++"/>
-					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include/c++/mingw32"/>
-					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include/c++/backward"/>
-					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include"/>
-					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/../../../../include"/>
-					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include-fixed"/>
+					<Add directory="C:/Users/37dw/Desktop/Cyptography/."/>
+					<Add directory="C:/Users/37dw/Desktop/Cyptography/Header"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include/c++/mingw32"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/../../../../include"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 Cyptography"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 Cyptography"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Cyptography/fast">
-				<Option output="C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Cyptography.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug"/>
+				<Option output="C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Cyptography.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/37dw/Desktop/Cyptography/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include/c++"/>
-					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include/c++/mingw32"/>
-					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include/c++/backward"/>
-					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include"/>
-					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/../../../../include"/>
-					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include-fixed"/>
+					<Add directory="C:/Users/37dw/Desktop/Cyptography/."/>
+					<Add directory="C:/Users/37dw/Desktop/Cyptography/Header"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include/c++/mingw32"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/../../../../include"/>
+					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/5.1.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 Cyptography/fast"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 Cyptography/fast"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug"/>
+				<Option working_dir="C:/Users/37dw/Desktop/Cyptography/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/37dw/Desktop/Cyptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Administrator/Desktop/Cyptography/Header/AffineCipher.h">
+		<Unit filename="C:/Users/37dw/Desktop/Cyptography/Header/AffineCipher.h">
 			<Option target="Cyptography"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/Cyptography/Header/BASE.h">
+		<Unit filename="C:/Users/37dw/Desktop/Cyptography/Header/BASE.h">
 			<Option target="Cyptography"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/Cyptography/Header/Big.h">
+		<Unit filename="C:/Users/37dw/Desktop/Cyptography/Header/Big.h">
 			<Option target="Cyptography"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/Cyptography/Header/Elgamal.h">
+		<Unit filename="C:/Users/37dw/Desktop/Cyptography/Header/Elgamal.h">
 			<Option target="Cyptography"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/Cyptography/Header/MD5.h">
+		<Unit filename="C:/Users/37dw/Desktop/Cyptography/Header/MD5.h">
 			<Option target="Cyptography"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/Cyptography/Realize/AffineCipher.cpp">
+		<Unit filename="C:/Users/37dw/Desktop/Cyptography/Header/RSA.h">
 			<Option target="Cyptography"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/Cyptography/Realize/BASE.cpp">
+		<Unit filename="C:/Users/37dw/Desktop/Cyptography/Realize/AffineCipher.cpp">
 			<Option target="Cyptography"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/Cyptography/Realize/Big.cpp">
+		<Unit filename="C:/Users/37dw/Desktop/Cyptography/Realize/BASE.cpp">
 			<Option target="Cyptography"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/Cyptography/Realize/Elgamal.cpp">
+		<Unit filename="C:/Users/37dw/Desktop/Cyptography/Realize/Big.cpp">
 			<Option target="Cyptography"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/Cyptography/Realize/MD5.cpp">
+		<Unit filename="C:/Users/37dw/Desktop/Cyptography/Realize/Elgamal.cpp">
 			<Option target="Cyptography"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/Cyptography/main.cpp">
+		<Unit filename="C:/Users/37dw/Desktop/Cyptography/Realize/MD5.cpp">
 			<Option target="Cyptography"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/Cyptography/CMakeLists.txt">
+		<Unit filename="C:/Users/37dw/Desktop/Cyptography/Realize/RSA.cpp">
+			<Option target="Cyptography"/>
+		</Unit>
+		<Unit filename="C:/Users/37dw/Desktop/Cyptography/main.cpp">
+			<Option target="Cyptography"/>
+		</Unit>
+		<Unit filename="C:/Users/37dw/Desktop/Cyptography/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

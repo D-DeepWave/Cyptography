@@ -13,7 +13,7 @@
 #include <algorithm>
 #include <random>
 
-#define capacity 100
+#define capacity 500
 #define base 0x40000000
 #define __base 0x20000000
 #define base_bit 30
@@ -158,7 +158,7 @@ signed_BigInt Get_Prime(const int Prime_Bits, const int Trial);
 
 signed_BigInt Euclid_GCD(const signed_BigInt &A, const signed_BigInt &B);
 
-signed_BigInt Extended_Euclid_GCD(const signed_BigInt &A, const signed_BigInt &B, signed_BigInt &X, signed_BigInt &Y);
+signed_BigInt Extended_Euclid_GCD(signed_BigInt A, signed_BigInt B, signed_BigInt &X, signed_BigInt &Y);
 
 output_BigInt operator+(const output_BigInt &A, const output_BigInt &B);
 
@@ -170,14 +170,10 @@ bool Miller_Rabin_Witness(const unsigned_BigInt &A, const BigInt_Exponentiation 
 
 bool Miller_Rabin_Primality_Test(const BigInt_Exponentiation &W, const int Trial);
 
-void GenerateKey(int bits, int round);
+unsigned_BigInt ToBig(const char *src);
 
-unsigned_BigInt Encode(const string &X);
+char *ToChar(unsigned_BigInt src);
 
-string Decode(unsigned_BigInt A);
-
-unsigned_BigInt E_RSA(string s);
-
-string D_RSA(unsigned_BigInt c) ;
+string ToStringOut(unsigned_BigInt src);
 
 #endif //CYPTOGRAPHY_BIG_H

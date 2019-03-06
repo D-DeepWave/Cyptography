@@ -7,10 +7,6 @@
 unsigned_BigInt Minus_One;
 int Big_Prime_Bits, Trial;
 const int Prime[25] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
-ofstream public_key_out;
-ofstream private_key_out;
-ifstream public_key_in;
-ifstream private_key_in;
 
 unsigned_BigInt::unsigned_BigInt(const unsigned_BigInt &source) : len(source.len) {
     memcpy(__data, source.__data, len * sizeof *__data);
@@ -22,7 +18,11 @@ unsigned_BigInt::unsigned_BigInt(int key) : len(0) {
 }
 
 unsigned_BigInt::unsigned_BigInt(string key) {
-
+    unsigned_BigInt res;
+    for (int i = 0; i < key.length(); i++)
+        res = res * 10 + key[i] - '0';
+    len = res.len;
+    memcpy(__data, res.__data, len * sizeof *__data);
 }
 
 unsigned_BigInt &unsigned_BigInt::operator=(const unsigned_BigInt &key) {
@@ -309,38 +309,50 @@ ostream &operator<<(ostream &Out, const unsigned_BigInt &A) {
         Out << 0;
         return Out;
     }
+
     output_BigInt V = 0;
     for (int i = A.len - 1; i >= 0; --i)
         V = V * base + A[i];
+
+
     Out << V[V.len - 1];
     for (int i = V.len - 2; i >= 0; --i)
         for (int j = 100000000; j > 0; j /= 10)
             Out << V[i] / j % 10;
     Out << endl;
-    if(Out==cout) {
-        int digit = 0;
-        for (int k = 1; k <= V[V.len - 1]; k *= 10)
-            ++digit;
-        digit += (V.len - 1) * 9;
-        Out << "Total Digit = " << digit << endl;
-    }
+
+
+    int digit = 0;
+    for (int k = 1; k <= V[V.len - 1]; k *= 10)
+        ++digit;
+
+    digit += (V.len - 1) * 9;
+
+    //  Out << "Total Digit = " << digit << endl;
+
     return Out;
 }
 
 ofstream &operator<<(ofstream &Out, const unsigned_BigInt &A) {
     if (A.len == 0) {
-        Out << (unsigned_BigInt) 0;
+        Out << "0";
         return Out;
     }
 
     output_BigInt V = 0;
     for (int i = A.len - 1; i >= 0; --i)
         V = V * base + A[i];
-    Out << (unsigned_BigInt) V[V.len - 1];
+
+    char c[100];
+    sprintf(c, "%d", V[V.len - 1]);
+    Out << c;
     for (int i = V.len - 2; i >= 0; --i)
-        for (int j = 100000000; j > 0; j /= 10)
-            Out << (unsigned_BigInt) V[i] / j % 10;
+        for (int j = 100000000; j > 0; j /= 10) {
+            sprintf(c, "%d", V[i] / j % 10);
+            Out << c;
+        }
     Out << endl;
+
     return Out;
 }
 
@@ -481,16 +493,26 @@ signed_BigInt Euclid_GCD(const signed_BigInt &A, const signed_BigInt &B) {
     return (B.sign == 0) ? A : Euclid_GCD(B, A % B);
 }
 
-signed_BigInt Extended_Euclid_GCD(const signed_BigInt &A, const signed_BigInt &B, signed_BigInt &X, signed_BigInt &Y) {
+signed_BigInt Extended_Euclid_GCD( signed_BigInt A,signed_BigInt B, signed_BigInt &X, signed_BigInt &Y) {
     if (B.sign == 0) {
         X = 1, Y = 0;
         return A;
-    } else {
-        signed_BigInt XX, YY;
-        signed_BigInt D = Extended_Euclid_GCD(B, A % B, XX, YY);
-        X = YY, Y = XX - (A / B) * YY;
-        return D;
     }
+    signed_BigInt r, q, s1 = 1, s2 = 0;
+    X = 0;Y =1;
+    r = A%B;
+    q = A/B;
+    while(compare(r.data,0)!=0)
+    {
+        signed_BigInt m =X,n = Y;
+        X = s1-X*q;
+        Y = s2-Y*q;
+        s1 = m;s2 = n;
+        A = B;B = r;
+        q = A /B;
+        r = A%B;
+    }
+    return B;
 }
 
 BigInt_Exponentiation::BigInt_Exponentiation(const BigInt_Exponentiation &source) : len(source.len) {
@@ -610,69 +632,47 @@ signed_BigInt Get_Prime(const int Prime_Bits, const int Trial) {
     }
 }
 
-void GenerateKey(int bits, int round) {
-    public_key_out.open("rsa_public.key", ios::app);
-    private_key_out.open("rsa_private.key", ios::app);
-    signed_BigInt P = Get_Prime(bits, round);
-    signed_BigInt Q = Get_Prime(bits, round);
-    signed_BigInt N = P * Q;
-    signed_BigInt Phi = (P - 1) * (Q - 1);
-    signed_BigInt D, E, Y;
-    for (E = 5; !(Extended_Euclid_GCD(E, Phi, D, Y) == signedOne); E = E + 2);
-    if (D.sign == -1)
-        D = D + Phi;
-    cout << "P = :" << P;
-    cout << "Q = :" << Q;
-    cout << "N = :" << N;
-    cout << "E = :" << E;
-    cout << "D = :" << D;
-
-    private_key_out << D ;
-    private_key_out << P ;
-    private_key_out << Q ;
-    public_key_out << N ;
-    public_key_out << E ;
-}
-
-unsigned_BigInt Encode(const string &X) {
-    unsigned_BigInt R = 0;
-    for (int i = 0; i < X.size(); ++i)
-        R = (R * 128) + int(X[i]);
-    return R;
-}
-
-string Decode(unsigned_BigInt A) {
-    unsigned_BigInt temp;
-    string S = "";
-    for (; A.len != 0; A = A / 128) {
-        temp = A % 128;
-        char ch = char(temp[0]);
-        S = ch + S;
+unsigned_BigInt ToBig(const char *src) {
+    unsigned_BigInt res(0);
+    int len = 0;
+    for (; *(src + len) != '\0';) {
+        int temp = (int) *(src + len);
+        if (temp < 0) temp = 10000 + abs(temp);
+        //cout<<temp<<endl;
+        res.__data[len++] = temp;
     }
-    return S;
-}
-
-unsigned_BigInt E_RSA(string s) {
-    public_key_in.open("rsa_public.key");
-    private_key_in.open("rsa_private.key");
-    unsigned_BigInt res, m, e, n;
-    m = Encode(s);
-    public_key_in >> n>>e ;
-  //  cout<<m<<n<<e;
-    res = Modular_Exponentiation(m, e, n);
+    res.len = len;
+    cout << "The char has convert to:" << res;
     return res;
 }
 
-string D_RSA(unsigned_BigInt c) {
-    public_key_in.open("rsa_public.key");
-    private_key_in.open("rsa_private.key");
-    unsigned_BigInt res, d, n;
-    string s;
-    public_key_in >> n;
-    private_key_in >> d;
-    res = Modular_Exponentiation(c, d, n);
-    s = Decode(res);
-    return s;
+char *ToChar(unsigned_BigInt src) {
+    unsigned_BigInt base_max("4294967296");
+    char *res = new char[128];
+    for (int i = 0; i < src.len; i++) {
+        // cout <<src.__data[i] << endl;
+        int temp = src.__data[i];
+        if (temp > 10000) temp = -(temp - 10000);
+        res[i] = (char) temp;
+    }
+    res[src.len] = '\0';
+    // printf("%s\n",res);
+    return res;
 }
 
-
+string ToStringOut(unsigned_BigInt src) {
+    if (src.len == 0) return 0;
+    string res = "";
+    output_BigInt V = 0;
+    for (int i = src.len - 1; i >= 0; --i)
+        V = V * base + src[i];
+    char *c;
+    sprintf(c, "%d", V[V.len - 1]);
+    res += c;
+    for (int i = V.len - 2; i >= 0; --i)
+        for (int j = 100000000; j > 0; j /= 10) {
+            sprintf(c, "%d", V[i] / j % 10);
+            res += c;
+        }
+    return res;
+}

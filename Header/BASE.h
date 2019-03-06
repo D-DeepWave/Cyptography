@@ -19,6 +19,18 @@ public:
     BigInteger(int s);
     BigInteger();
 };
+
+class Base64{
+private:
+    std::string _base64_table;
+    static const char base64_pad = '=';public:
+    Base64()
+    {
+        _base64_table = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+    }
+    string Encode(unsigned  char * str);
+    string Decode(char * str);
+};
 ostream& operator <<(ostream &out,BigInteger &a);
 int Compare(BigInteger a,BigInteger b);
 BigInteger operator +( BigInteger a, BigInteger b);
@@ -36,7 +48,6 @@ BigInteger ModMul(BigInteger a,BigInteger b,BigInteger mod);
 BigInteger GCD(BigInteger a,BigInteger b);
 void ExGCD(BigInteger a,BigInteger b,BigInteger &x,BigInteger &y);
 BigInteger Inv(BigInteger a,BigInteger b);
-BigInteger GetPrime();
 bool MillerRabin(BigInteger n);
 bool IsEqual(BigInteger a,BigInteger b);
 #endif //BASE_BASE_H

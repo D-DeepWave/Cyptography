@@ -6,15 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Administrator/Desktop/Cyptography/Header/AffineCipher.h
-bits/stdc++.h
--
-
-C:/Users/Administrator/Desktop/Cyptography/Header/BASE.h
-bits/stdc++.h
--
-
-C:/Users/Administrator/Desktop/Cyptography/Header/Big.h
+C:/Users/37dw/Desktop/Cyptography/Header/Big.h
 iostream
 -
 fstream
@@ -30,31 +22,23 @@ algorithm
 random
 -
 
-C:/Users/Administrator/Desktop/Cyptography/Header/Elgamal.h
+C:/Users/37dw/Desktop/Cyptography/Header/Elgamal.h
 Big.h
-C:/Users/Administrator/Desktop/Cyptography/Header/Big.h
+C:/Users/37dw/Desktop/Cyptography/Header/Big.h
 cstdlib
 -
 memory
 -
-string
--
 bitset
 -
-
-C:/Users/Administrator/Desktop/Cyptography/Header/MD5.h
-bits/stdc++.h
+fstream
+-
+iostream
+-
+string
 -
 
-C:/Users/Administrator/Desktop/Cyptography/main.cpp
-Header/BASE.h
-C:/Users/Administrator/Desktop/Cyptography/Header/BASE.h
-Header/MD5.h
-C:/Users/Administrator/Desktop/Cyptography/Header/MD5.h
-Header/AffineCipher.h
-C:/Users/Administrator/Desktop/Cyptography/Header/AffineCipher.h
-Header/Big.h
-C:/Users/Administrator/Desktop/Cyptography/Header/Big.h
-Header/Elgamal.h
-C:/Users/Administrator/Desktop/Cyptography/Header/Elgamal.h
+C:/Users/37dw/Desktop/Cyptography/Realize/Elgamal.cpp
+../Header/Elgamal.h
+C:/Users/37dw/Desktop/Cyptography/Header/Elgamal.h
 

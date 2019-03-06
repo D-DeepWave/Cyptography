@@ -5,13 +5,13 @@
       <config projectName="Cyptography" targetName="Cyptography" />
     </generated>
   </component>
-  <component name="CMakeSettings" AUTO_RELOAD="true">
+  <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b256f6e5-a67d-4685-8972-f78eba4fb4f7" name="Default Changelist" comment="" />
+    <list default="true" id="255f4ff2-4147-4977-a30e-633b5c653bc6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,14 +22,20 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Realize/Elgamal.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="145" column="8" lean-forward="true" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Realize/Big.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="483" column="14" selection-start-line="483" selection-start-column="14" selection-end-line="483" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17496">
+              <caret line="486" column="20" selection-start-line="486" selection-start-column="20" selection-end-line="486" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -37,86 +43,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Header/Big.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-              <folding>
-                <element signature="e#96#115#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Realize/Elgamal.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="92" column="44" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Header/Elgamal.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="e#109#125#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="82" column="22" lean-forward="true" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="5760">
+              <caret line="160" column="65" selection-start-line="160" selection-start-column="65" selection-end-line="160" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>Modular_Exponentiation</find>
-      <find>Big_Prime_Bits</find>
-      <find>delta</find>
-      <find>rand</find>
-      <find>Extended_Euclid_GCD</find>
-    </findStrings>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/../RSA-master/RSA.cpp" />
-        <option value="$PROJECT_DIR$/Header/MD5.h" />
-        <option value="$PROJECT_DIR$/Realize/MD5.cpp" />
+        <option value="$PROJECT_DIR$/Realize/RSA.cpp" />
         <option value="$PROJECT_DIR$/Realize/Big.cpp" />
         <option value="$PROJECT_DIR$/Header/Big.h" />
-        <option value="$PROJECT_DIR$/Header/Elgamal.h" />
         <option value="$PROJECT_DIR$/Realize/Elgamal.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="456" />
-    <option name="y" value="1" />
-    <option name="width" value="981" />
+    <option name="x" value="872" />
+    <option name="y" value="10" />
+    <option name="width" value="1054" />
     <option name="height" value="1040" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,28 +85,25 @@
             <path>
               <item name="Cyptography" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cyptography" type="462c0819:PsiDirectoryNode" />
-              <item name="Header" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cyptography" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cyptography" type="462c0819:PsiDirectoryNode" />
               <item name="Realize" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.C/C++" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\Cyptography\Realize" />
+      <recent name="C:\Users\37dw\Desktop\Cyptography\Realize" />
+      <recent name="C:\Users\37dw\Desktop\Cyptography\Header" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -175,189 +130,90 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b256f6e5-a67d-4685-8972-f78eba4fb4f7" name="Default Changelist" comment="" />
-      <created>1551446458419</created>
+      <changelist id="255f4ff2-4147-4977-a30e-633b5c653bc6" name="Default Changelist" comment="" />
+      <created>1551870292106</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1551446458419</updated>
-      <workItem from="1551446465429" duration="3613000" />
-      <workItem from="1551460345408" duration="3015000" />
-      <workItem from="1551508450807" duration="7861000" />
-      <workItem from="1551526218160" duration="11096000" />
-      <workItem from="1551579947195" duration="1422000" />
-      <workItem from="1551589731867" duration="2656000" />
-      <workItem from="1551618114483" duration="4897000" />
-      <workItem from="1551659517845" duration="23447000" />
+      <updated>1551870292106</updated>
+      <workItem from="1551870294168" duration="9144000" />
+      <workItem from="1551884543341" duration="951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58007000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="10095000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.37739873" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34199134" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4864572" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.33874458" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.4220963" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" weight="0.32956153" />
+      <window_info anchor="bottom" id="CMake" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.37739873" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34199134" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
-      <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.33874458" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" weight="0.32956153" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/Git/Cyptography/Base/main.cpp" />
-    <entry file="file://$PROJECT_DIR$/../RSA-master/Decoder.cpp" />
-    <entry file="file://$PROJECT_DIR$/Realize/BASE.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4752" />
-      </provider>
-    </entry>
-    <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/fstream">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="681" column="6" selection-start-line="681" selection-start-column="6" selection-end-line="681" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RSA-master/Encoder.cpp" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        <state relative-caret-position="296">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../RSA-master/RSA.cpp" />
-    <entry file="file://$PROJECT_DIR$/Header/MD5.h">
+    <entry file="file://$PROJECT_DIR$/Realize/RSA.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-639">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="148">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/uniform_int_dist.h">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="60" column="10" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/Tencent Files/1378024281/FileRecv/MobileFile/RSA-master-1/RSA-master/RSA.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14949">
+        <state relative-caret-position="4958">
+          <caret line="134" column="19" lean-forward="true" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="19" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Header/BASE.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Realize/MD5.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="61" column="57" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Header/Big.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-          <folding>
-            <element signature="e#96#115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Realize/Big.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="483" column="14" selection-start-line="483" selection-start-column="14" selection-end-line="483" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Header/Elgamal.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#109#125#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Realize/Elgamal.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="92" column="44" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="44" />
+        <state relative-caret-position="119">
+          <caret line="145" column="8" lean-forward="true" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Realize/Big.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="82" column="22" lean-forward="true" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17496">
+          <caret line="486" column="20" selection-start-line="486" selection-start-column="20" selection-end-line="486" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Header/Big.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5760">
+          <caret line="160" column="65" selection-start-line="160" selection-start-column="65" selection-end-line="160" selection-end-column="65" />
         </state>
       </provider>
     </entry>

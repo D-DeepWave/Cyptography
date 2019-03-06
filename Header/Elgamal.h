@@ -8,30 +8,46 @@
 #include "Big.h"
 #include <cstdlib>
 #include <memory>
-#include <string>
 #include <bitset>
+#include <fstream>
+#include <iostream>
+#include <string>
+
 
 class Elgamal {
 public:
     ofstream public_key_out;
     ofstream private_key_out;
+    ofstream cipher_out;
+    ifstream cipher_in;
     ifstream public_key_in;
     ifstream private_key_in;
-    unsigned_BigInt P, Y, G, X, K,c1,c2;
 
     Elgamal();
 
-    void Generate();
+    void Generate(int level);
 
-    void Encode(wstring src);
+    void Encode(string src);
 
     void Decode();
+
 };
 
-string ToBin(wstring s);
+class Elgamal_sign
+{
+public:
+    unsigned_BigInt m,r,s;
+    Elgamal e;
+    Elgamal_sign();
+    void Sign(string s);
+    void Verification();
+};
 
-unsigned_BigInt BinToBig(string src);
-
-wstring BigToWstring(unsigned_BigInt src);
+class Elgamal_key
+{
+public:
+    unsigned_BigInt Y,G,P,K,X;
+    Elgamal_key();
+};
 
 #endif //CYPTOGRAPHY_ELGAMAL_H
